@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.NavBar{
+   
+    height: 50px;
+    background:#008080;
+    position: relative;
+
+}
+.img_logo{
+    position: relative;
+    animation: mymove 6s ;
+   animation-iteration-count: infinite;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left:20px;}
+    
+  }
+img{
+    width: 37px;
+    height: 40px;
+    margin: 6px 0px;
+
+
+}
+.img_user{   
+    position: relative;
+  
+ }
+ 
+ .NavBar .content{
+    display:flex;
+    margin: auto;
+    
+    width: 65%;
+
+ }
+
+.NavBar  .content ul{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.NavBar .content ul li{
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    
+    
+    
+
+
+    
+}
+.NavBar  .content ul li a{
+    text-decoration: none;
+    color: white; 
+    margin: 0px 90px;
+    text-transform: capitalize;
+    font-family:"Lucida Console", "Courier New", monospace;
+
+   
+
+
+}   
+.NavBar  .content ul li  :hover{
+    color: #008080;
+    background:gray;
+
+    transform: scale(1.1);
+}
+
+#navside{
+    color: black;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    width: 20%;
+    z-index: 1;
+    display: none;
+    
+
+    
+
+}
+.navsideA {
+    display: block;
+
+}
+#navside li{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: gray;
+    border: white solid 2px;
+    width: 70%;
+
+
+
+    
+}
+#navside li:hover{
+    background:black;
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+#navside li a{
+    text-decoration: none;
+    margin: 10px 0px;
+    text-transform: capitalize;
+    padding: 3px 0px;
+    color: white;
+    font-family:"Lucida Console", "Courier New", monospace;
+
+}
+

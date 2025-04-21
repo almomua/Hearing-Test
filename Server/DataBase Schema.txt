@@ -1,0 +1,64 @@
+user table [
+Id (auto incremented),
+name (requird , unique),
+email (requird , unique),
+password (requird),
+is_admin (defualt false),
+is_verified (defualt false),
+is_accepted  (defualt false),
+token,
+last_login,
+created_at (defualt current_timestamp() ),
+updated_at (defualt current_timestamp() ),
+]
+
+exam table[
+Id (auto incremented),
+Name (requird , unique),
+number_of_questions,
+Description (optional)
+created_at (defualt current_timestamp())
+]
+
+question table [
+Id (auto incremented),
+Name (requird , unique),
+Audio (requird),
+RightAnswer (requird),
+Wrong1 (requird),
+Wrong2 (requird),
+Wrong3 (requird),
+Description (optional),
+created_at (defualt current_timestamp())
+]
+
+exam_question table[
+exam_id (foreign key),
+quistion_id (foreign key),
+Id (composite primary key[exam_id , quistion_id])
+]
+
+histoy table[
+user_id (requird),
+exam_id (requird),
+quistion_id (requird),
+Id (composite primary key[user_id , exam_id , quistion_id,created_at]),
+Answer,
+IsRight (defualt false),
+created_at (defualt current_timestamp())
+]
+
+password_resets[
+Email (requird , unique),
+token ,
+created_at (defualt current_timestamp())
+]
+
+
+questions controller [GET,POST,PUT,DELETE]
+
+user controller      [GET,POST,PUT,DELETE]
+
+histoy controller    [GET,POST,DELETE]
+
+exam controller      [GET,POST,PUT,DELETE]

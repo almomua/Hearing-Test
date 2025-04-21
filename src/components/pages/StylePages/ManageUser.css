@@ -1,0 +1,59 @@
+.manage_user{
+
+  
+  /* height: 60vh; */
+}
+.manage input{
+  width: 50%;
+  height: 35px;
+  border: solid 1px #008080;
+  margin: 7px 0px;
+}
+.manage input:hover{
+  scale:1.2;
+}
+.manage{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.active{
+ 
+}
+.btn-up , .users button{
+  color: white;
+    background: #008080;
+    border-radius: 8px;
+
+    border: white;
+    text-transform: capitalize;
+    padding: 5px;
+    text-decoration: none;
+}
+.btn-up:hover , .users button:hover{
+  background: gray;
+  color: white;
+
+}
+
+
+#search{
+  text-align: center;
+}
+.users{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+  text-align: center;
+  flex-direction: column;
+}
+.users table{
+  width:90%;
+}
+
+ td ,th {
+  padding: 9px;
+}
